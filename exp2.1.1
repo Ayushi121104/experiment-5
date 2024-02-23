@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+ 
+// Function to print the
+// required sequence
+void findNumbers(int n)
+{
+    int i = 0;
+    while (i <= n) {
+ 
+        // Print ith odd number
+        cout << 2 * i * i + 4 * i
+                    + 1 + i % 2
+             << " ";
+        i++;
+    }
+}
+ 
+// Driver Code
+int main()
+{
+    int n = 6;
+    findNumbers(n);
+}
